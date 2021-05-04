@@ -1,8 +1,14 @@
 ---
 permalink: /about/
-title: "About"
+title: My page
+tweets:
+  - https://twitter.com/dhh/status/1162426045405921282
+  - https://twitter.com/rails/status/1205565185739673600
+a_tweet: https://twitter.com/rubygems/status/518821243320287232
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+{% for tweet in page.tweets %}
+  {% twitter tweet align=right width=350 %}
+{% endfor %}
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+{% twitter page.a_tweet %}
