@@ -24,6 +24,12 @@ github_username: username
 minimal_mistakes_skin: default
 search: true
 
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "UA-141216736-1"
+    anonymize_ip: false # default
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
